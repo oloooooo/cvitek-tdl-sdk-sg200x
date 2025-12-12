@@ -63,7 +63,13 @@ cd sample
 ./compile_sample.sh
 ```
 
-The generated program is in the corresponding subdirectory in the sample directory.
+The generated programs stay in the same subdirectory where they are built. For example:
+
+- `sample/cvi_tdl/` contains `sample_vi_*`, `sample_read_*`, and related binaries for TDL demos.
+- `sample/cvi_tdl_app/` produces `sample_app_*` executables.
+- `sample/cvi_md/`, `sample/cvi_preprocess/`, and `sample/cvi_yolo/` each emit their own `sample_*` targets next to their Makefiles.
+
+After `compile_sample.sh` finishes, you can enter the corresponding subfolder and run the desired sample binary directly.
 
 For clean:
 ```
