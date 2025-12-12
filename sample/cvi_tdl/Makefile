@@ -260,18 +260,18 @@ TARGETS_VI_SAMPLE := $(shell find . -type f -name 'sample_vi_*.c' -exec basename
 TARGETS_AUDIO_SAMPLE := $(shell find . -type f -name 'sample_aud_*.c' -exec basename {} .c ';')
 TARGETS_AUDIO_SAMPLE += $(shell find . -type f -name 'sample_aud_*.cpp' -exec basename {} .cpp ';')
 
-TARGETS_IMAGE_SAMPLE := $(shell find . -type f -name 'sample_read_*.c' -exec basename {} .c ';')
-TARGETS_IMAGE_SAMPLE += $(shell find . -type f -name 'sample_read_*.cpp' -exec basename {} .cpp ';')
+TARGETS_READ_SAMPLE := $(shell find . -type f -name 'sample_read_*.c' -exec basename {} .c ';')
+TARGETS_READ_SAMPLE += $(shell find . -type f -name 'sample_read_*.cpp' -exec basename {} .cpp ';')
 
 TARGETS_APP_SAMPLE := $(shell find . -type f -name 'sample_app_*.c' -exec basename {} .c ';')
 TARGETS_YOLO_SAMPLE := $(shell find . -type f -name 'sample_yolo*.cpp' -exec basename {} .cpp ';')
 
 TARGETS = $(TARGETS_SAMPLE_INIT) \
-  	      $(TARGETS_VI_SAMPLE) \
- 	      $(TARGETS_AUDIO_SAMPLE) \
-	      $(TARGETS_READ_SAMPLE) \
-	      $(TARGETS_APP_SAMPLE) \
-	      $(TARGETS_YOLO_SAMPLE)
+              $(TARGETS_VI_SAMPLE) \
+              $(TARGETS_AUDIO_SAMPLE) \
+              $(TARGETS_READ_SAMPLE) \
+              $(TARGETS_APP_SAMPLE) \
+              $(TARGETS_YOLO_SAMPLE)
 
 .PHONY : all clean
 
