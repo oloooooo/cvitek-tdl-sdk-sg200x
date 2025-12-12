@@ -267,11 +267,11 @@ TARGETS_APP_SAMPLE := $(shell find . -type f -name 'sample_app_*.c' -exec basena
 TARGETS_YOLO_SAMPLE := $(shell find . -type f -name 'sample_yolo*.cpp' -exec basename {} .cpp ';')
 
 TARGETS = $(TARGETS_SAMPLE_INIT) \
-  	      $(TARGETS_VI_SAMPLE) \
- 	      $(TARGETS_AUDIO_SAMPLE) \
-	      $(TARGETS_READ_SAMPLE) \
-	      $(TARGETS_APP_SAMPLE) \
-	      $(TARGETS_YOLO_SAMPLE)
+              $(TARGETS_VI_SAMPLE) \
+              $(TARGETS_AUDIO_SAMPLE) \
+              $(TARGETS_IMAGE_SAMPLE) \
+              $(TARGETS_APP_SAMPLE) \
+              $(TARGETS_YOLO_SAMPLE)
 
 .PHONY : all clean
 
